@@ -1,0 +1,34 @@
+{
+  "name": "level-push",
+  "version": "0.0.1",
+  "description": "Pushes JSON to your LevelDB with auto-generated UUID",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maiah/level-push.git"
+  },
+  "keywords": [
+    "leveldb",
+    "levelup",
+    "json",
+    "uuid",
+    "database",
+    "db"
+  ],
+  "author": "Maiah Macariola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maiah/level-push/issues"
+  },
+  "devDependencies": {
+    "leveldown": "~0.7.0",
+    "levelup": "~0.14.0"
+  },
+  "dependencies": {
+    "uuid": "~1.4.1",
+    "level-set": "0.0.5"
+  }
+}
