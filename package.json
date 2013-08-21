@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "uuid": "~1.4.1",
-    "level-set": "0.0.5"
+    "level-set": "0.0.7"
   }
 }
