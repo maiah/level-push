@@ -23,7 +23,6 @@ var person = { name: 'Maiah', occupation: 'Ninja' };
 db.push('/', person, function (err, uuid) {
   if (!err) {
     console.log('Saved person under root path');
-  } else {
     console.log(uuid); // e.g. 01a538b6-5219-495c-bb8d-bbf4117a6ae2
   }
 });
@@ -48,7 +47,6 @@ var person = {
 db.set('/', person, function (err, uuid) {
   if (!err) {
     console.log('Saved person under root path');
-  } else {
     console.log(uuid); // e.g. 01a538b6-5219-495c-bb8d-bbf4117a6ae2
   }
 });
@@ -68,7 +66,6 @@ var person = { name: 'Maiah', occupation: 'Ninja' };
 db.set('/person', person, function (err, uuid) {
   if (!err) {
     console.log('Saved person object');
-  } else {
     console.log(uuid); // e.g. 01a538b6-5219-495c-bb8d-bbf4117a6ae2
   }
 });
