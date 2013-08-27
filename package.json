@@ -1,6 +1,6 @@
 {
   "name": "level-push",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Pushes JSON to your LevelDB with auto-generated UUID",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
     "levelup",
     "json",
     "uuid",
+    "guid",
     "database",
     "db"
   ],
@@ -28,7 +29,6 @@
     "levelup": "~0.14.0"
   },
   "dependencies": {
-    "uuid": "~1.4.1",
     "level-set": "0.0.7"
   }
 }

@@ -39,3 +39,17 @@ db.push('/persons', ninja, function (err, uuid) {
 		assert.strictEqual(value, 'Ninja');
 	});
 });
+
+db.push('/persons/army', ninja, function (err, uuid) {
+	assert(!err);
+
+	db.get('persons/army/' + uuid + '/name', function (err, value) {
+		assert(!err);
+		assert.strictEqual(value, 'Maiah');
+	});
+
+	db.get('persons/army/' + uuid + '/occupation', function (err, value) {
+		assert(!err);
+		assert.strictEqual(value, 'Ninja');
+	});
+});
