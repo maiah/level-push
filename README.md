@@ -1,7 +1,7 @@
 level-push
 ==========
 
-Pushes JSON to your LevelDB with auto-generated UUID
+Pushes JSON to your LevelDB with auto-generated UUID. Uses [level-set](https://github.com/maiah/level-set) to convert JSON to LevelDB data structure.
 
 ### Install
 ```bash
@@ -44,7 +44,7 @@ var person = {
   }
 };
 
-db.set('/', person, function (err, uuid) {
+db.push('/', person, function (err, uuid) {
   if (!err) {
     console.log('Saved person under root path');
     console.log(uuid); // e.g. 01a538b6-5219-495c-bb8d-bbf4117a6ae2
@@ -63,7 +63,7 @@ This will put key-value pairs LevelDB data structure at the `root` path prepende
 You can also specify a path other than the `root`.
 ```js
 var person = { name: 'Maiah', occupation: 'Ninja' };
-db.set('/person', person, function (err, uuid) {
+db.push('/person', person, function (err, uuid) {
   if (!err) {
     console.log('Saved person object');
     console.log(uuid); // e.g. 01a538b6-5219-495c-bb8d-bbf4117a6ae2

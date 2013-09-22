@@ -1,7 +1,7 @@
 {
   "name": "level-push",
-  "version": "0.1.0",
-  "description": "Pushes JSON to your LevelDB with auto-generated UUID",
+  "version": "0.1.1",
+  "description": "Pushes JSON to your LevelDB with auto-generated UUID. Uses [level-set](https://github.com/maiah/level-set) to convert JSON to LevelDB data structure.",
   "main": "index.js",
   "scripts": {
     "test": "node test"
